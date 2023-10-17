@@ -45,5 +45,4 @@ EntityCache
 EntityCache.meta
 Projects/Hybrid/UserSettings
 StreamingAssets.meta
-SceneDependencyCache.meta
-SceneDependencyCache/
+*.meta
