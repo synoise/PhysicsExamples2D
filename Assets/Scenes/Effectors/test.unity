@@ -427,6 +427,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Surface2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2989401558559354547, guid: 6dd899bb10ce0cb4d84002eeeea794f9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5449890507503643094, guid: 6dd899bb10ce0cb4d84002eeeea794f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -476,6 +481,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -76.962
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465184184549243443, guid: 6dd899bb10ce0cb4d84002eeeea794f9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779554543210419202, guid: 6dd899bb10ce0cb4d84002eeeea794f9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
