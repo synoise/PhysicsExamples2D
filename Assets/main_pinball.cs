@@ -17,20 +17,20 @@ public class main_pinball : MonoBehaviour
         // if (Input.GetKey(KeyCode.Space) &&  rotatedObject.transform.rotation.z <  maxAngular)
         if (Input.GetKey(KeyCode.Space) )
         {  
-            Debug.Log("space key was pressed "+ rotatedObject.transform.rotation.z +" _ /"+ (initialAngular.z+0.2) +"///"+ (rotatedObject.transform.rotation.z < (initialAngular.z+0.2) ));
-            rotatedObject.transform.Rotate(Vector3.forward * 3.0f );
+            // Debug.Log("space key was pressed "+ rotatedObject.transform.rotation.z +" _ /"+ (initialAngular.z+0.2) +"///"+ (rotatedObject.transform.rotation.z < (initialAngular.z+0.2) ));
+            rotatedObject.transform.Rotate(Vector3.forward * 1.0f );
             // rotatedObject.transform.Rotate();
         }
-        else
-        {
-            rotatedObject.transform.rotation = initialAngular;
-        }
+        // else
+        // {
+        //     rotatedObject.transform.rotation = initialAngular;
+        // }
 
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            Debug.Log("space key was UPUP" + initialAngular);
+            // Debug.Log("space key was UPUP" + initialAngular);
             rotatedObject.transform.rotation = initialAngular;
-            // rotatedObject.transform.rotation.eulerAngles.z = 0.0f
+            // /rotatedObject.transform.rotation.eulerAngles.z = 0.0f
         }
         
         void Start()
