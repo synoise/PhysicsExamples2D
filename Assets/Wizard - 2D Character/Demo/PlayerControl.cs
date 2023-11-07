@@ -32,7 +32,6 @@ public class PlayerControl : MonoBehaviour
                 Attack();
                 Jump();
                 Run();
-
             
         }
         private void OnTriggerEnter2D(Collider2D other)
