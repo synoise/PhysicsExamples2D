@@ -37,6 +37,7 @@ namespace ClearSky
         }
         private void OnTriggerEnter2D(Collider2D other)
         {
+            Debug.Log("OnTriggerEnter2D");
             anim.SetBool("isJump", false);
         }
 
@@ -86,7 +87,8 @@ namespace ClearSky
 
             Vector2 jumpVelocity = new Vector2(0, jumpPower);
             rb.AddForce(jumpVelocity, ForceMode2D.Impulse);
-
+            Debug.Log(isJumping);
+            // anim.SetBool("isJump", false);
             isJumping = false;
         }
         void Attack()
