@@ -1,15 +1,14 @@
 ﻿using UnityEngine;
 
-public class PlayerControl : MonoBehaviour
+namespace ClearSky
 {
+    public class SimplePlayer : MonoBehaviour
+    {
         public float movePower = 10f;
         public float jumpPower = 15f; //Set Gravity Scale in Rigidbody2D Component to 5
-        // public GameObject running; //Set Gravity Scale in Rigidbody2D Component to 5
-        // public GameObject standing1;
-        // public GameObject jump1;
-             //Set Gravity Scale in Rigidbody2D Component to 5
 
         private Rigidbody2D rb;
+        private Animator anim;
         Vector3 movement;
         private int direction = 1;
         bool isJumping = false;
@@ -19,8 +18,8 @@ public class PlayerControl : MonoBehaviour
         // Start is called before the first frame update
         void Start()
         {
-            Restart();
             rb = GetComponent<Rigidbody2D>();
+            anim = GetComponent<Animator>();
         }
 
         private void Update()
@@ -38,35 +37,24 @@ public class PlayerControl : MonoBehaviour
         }
         private void OnTriggerEnter2D(Collider2D other)
         {
-     
-        }
-        
-        void Restart()
-        {
-            if (Input.GetKeyDown(KeyCode.Alpha0))
-            {
-                // anim.SetTrigger("idle");
-                alive = true;
-            }
+            anim.SetBool("isJump", false);
         }
 
 
         void Run()
         {
             Vector3 moveVelocity = Vector3.zero;
-            // Debug.Log(anim);
-   
-    
+            anim.SetBool("isRun", false);
+
+
             if (Input.GetAxisRaw("Horizontal") < 0)
             {
                 direction = -1;
                 moveVelocity = Vector3.left;
 
                 transform.localScale = new Vector3(direction, 1, 1);
-                
-                // running.SetActive(true); //Set Gravity Scale in Rigidbody2D Component to 5
-          
-           
+                if (!anim.GetBool("isJump"))
+                    anim.SetBool("isRun", true);
 
             }
             if (Input.GetAxisRaw("Horizontal") > 0)
@@ -75,28 +63,22 @@ public class PlayerControl : MonoBehaviour
                 moveVelocity = Vector3.right;
 
                 transform.localScale = new Vector3(direction, 1, 1);
-                
-     
+                if (!anim.GetBool("isJump"))
+                    anim.SetBool("isRun", true);
 
             }
             transform.position += moveVelocity * movePower * Time.deltaTime;
         }
         void Jump()
         {
-            if (Input.GetButtonDown("Jump") || Input.GetAxisRaw("Vertical") > 0)
-      
+            if ((Input.GetButtonDown("Jump") || Input.GetAxisRaw("Vertical") > 0)
+            && !anim.GetBool("isJump"))
             {
-                // isJumping = true;
-                // running.SetActive(false); //Set Gravity Scale in Rigidbody2D Component to 5
-                // standing1.SetActive(false);
-                // jump1.SetActive(true);
-        
+                isJumping = true;
+                anim.SetBool("isJump", true);
             }
             if (!isJumping)
             {
-                // running.SetActive(false); //Set Gravity Scale in Rigidbody2D Component to 5
-                // standing1.SetActive(true);
-                // jump1.SetActive(false);
                 return;
             }
 
@@ -111,14 +93,14 @@ public class PlayerControl : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-       
+                anim.SetTrigger("attack");
             }
         }
         void Hurt()
         {
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
- 
+                anim.SetTrigger("hurt");
                 if (direction == 1)
                     rb.AddForce(new Vector2(-5f, 1f), ForceMode2D.Impulse);
                 else
@@ -129,9 +111,17 @@ public class PlayerControl : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-
+                anim.SetTrigger("die");
                 alive = false;
             }
         }
-
+        void Restart()
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha0))
+            {
+                anim.SetTrigger("idle");
+                alive = true;
+            }
+        }
     }
+}
