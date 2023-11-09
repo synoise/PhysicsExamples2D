@@ -14,7 +14,7 @@
 
         void OnCollisionEnter2D(Collision2D col)
         {
-            Debug.Log("OnCollisionEnter2D " + col.collider.tag);
+            // Debug.Log("OnCollisionEnter2D " + col.collider.tag);
             anim.SetBool("isJump", false);
             // if (col.gameObject.CompareTag("Dead"))
    
