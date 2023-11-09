@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 
-namespace ClearSky
-{
     public class SimplePlayerController : MonoBehaviour
     {
         public float movePower = 10f;
@@ -14,7 +12,14 @@ namespace ClearSky
         bool isJumping = false;
         private bool alive = true;
 
-
+        void OnCollisionEnter2D(Collision2D col)
+        {
+            Debug.Log("OnCollisionEnter2D " + col.collider.tag);
+            anim.SetBool("isJump", false);
+            // if (col.gameObject.CompareTag("Dead"))
+   
+        }
+        
         // Start is called before the first frame update
         void Start()
         {
@@ -39,7 +44,13 @@ namespace ClearSky
         {
             Debug.Log("OnTriggerEnter2D");
             anim.SetBool("isJump", false);
-        }
+        }        
+        
+        // void OnCollisionEnter(Collision collision)
+        // {
+        //     Debug.Log("OnCollisionEnter");
+        //     anim.SetBool("isJump", false);
+        // }
 
 
         void Run()
@@ -126,4 +137,3 @@ namespace ClearSky
             }
         }
     }
-}

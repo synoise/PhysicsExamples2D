@@ -20,6 +20,19 @@ public class DragTarget : MonoBehaviour
 	public Color m_Color = Color.cyan;
 
 	private TargetJoint2D m_TargetJoint;
+	
+	public Transform explosionPrefab;
+
+	void OnCollisionEnter(Collision collision)
+	{
+		Debug.Log("OnCollisionEnter");
+		ContactPoint contact = collision.contacts[0];
+		Quaternion rotation = Quaternion.FromToRotation(Vector3.up, contact.normal);
+		Vector3 position = contact.point;
+		Instantiate(explosionPrefab, position, rotation);
+		Destroy(gameObject);
+	}
+
 
 	void Update ()
 	{

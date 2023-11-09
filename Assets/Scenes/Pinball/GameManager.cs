@@ -47,7 +47,7 @@
 //     private GameState _gameState = GameState.Prepare;
 //
 //     [Header("Gameplay References")]
-//     public UIManager uIManager;
+//     // public UIManager uIManager;
 //     public GameObject ballPrefab;
 //     public GameObject ballPoint;
 //     public GameObject obstacleManager;
@@ -92,7 +92,7 @@
 //     {
 //         GameState = GameState.Prepare;
 //
-//         ScoreManager.Instance.Reset();
+//         // ScoreManager.Instance.Reset();
 //         currentTargetPoint = null;
 //         leftFlipperRigid = leftFlipper.GetComponent<Rigidbody2D>();
 //         rightFlipperRigid = rightFlipper.GetComponent<Rigidbody2D>();
@@ -120,11 +120,11 @@
 //     // Update is called once per frame
 //     void Update()
 //     {
-//         if (!gameOver && !UIManager.firstLoad)
+//         if (true)
 //         {
 //             if (Input.GetMouseButtonDown(0))
 //             {
-//                 SoundManager.Instance.PlaySound(SoundManager.Instance.flipping);
+//                 // SoundManager.Instance.PlaySound(SoundManager.Instance.flipping);
 //                 Vector3 mouseInput = Input.mousePosition;
 //                 //Flipping right
 //                 if (mouseInput.x >= Screen.width / 2f)
@@ -230,7 +230,7 @@
 //         //No ball left -> game over
 //         if (listBall.Count == 0)
 //         {
-//             SoundManager.Instance.PlaySound(SoundManager.Instance.gameOver);
+//             // SoundManager.Instance.PlaySound(SoundManager.Instance.gameOver);
 //             gameOver = true;
 //
 //             currentTargetPoint.SetActive(false);
