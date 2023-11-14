@@ -53,40 +53,47 @@ public class PlayerControl : MonoBehaviour
 
         void Run()
         {
-            Vector3 moveVelocity = Vector3.zero;
+           
             // Debug.Log(anim);
    
     
             if (Input.GetAxisRaw("Horizontal") < 0)
             {
-                direction = -1;
-                moveVelocity = Vector3.left;
-
-                transform.localScale = new Vector3(direction, 1, 1);
-                
-                // running.SetActive(true); //Set Gravity Scale in Rigidbody2D Component to 5
-          
-           
-
+                movePlayer(-1, 1, 1);
             }
             if (Input.GetAxisRaw("Horizontal") > 0)
             {
-                direction = 1;
-                moveVelocity = Vector3.right;
-
-                transform.localScale = new Vector3(direction, 1, 1);
-                
-     
-
+                movePlayer(1, 1, 1);
             }
-            transform.position += moveVelocity * movePower * Time.deltaTime;
+            if (Input.GetAxisRaw("Vertical") > 0)
+            {
+                // Debug.Log(anim);
+                // movePlayer(-1, -1, 1);
+            }
+            if (Input.GetAxisRaw("Vertical") > 0)
+            {
+                // Debug.Log(anim);
+                // movePlayer(1, 1, -1);
+            }
+           
         }
+
+        private void movePlayer(int direction1, int y, int z)
+        { 
+            Vector3 moveVelocity = Vector3.zero;
+            direction = 1;
+            moveVelocity = Vector3.right;
+            transform.localScale = new Vector3(direction1, y, z);
+            transform.position += moveVelocity * movePower * Time.deltaTime;
+            
+        }
+
         void Jump()
         {
             if (Input.GetButtonDown("Jump") || Input.GetAxisRaw("Vertical") > 0)
       
             {
-                // isJumping = true;
+
                 // running.SetActive(false); //Set Gravity Scale in Rigidbody2D Component to 5
                 // standing1.SetActive(false);
                 // jump1.SetActive(true);
