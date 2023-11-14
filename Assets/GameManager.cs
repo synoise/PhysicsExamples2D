@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
     { 
         mouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
         Debug.Log(mouseDelta);
+<<<<<<< HEAD
         
+=======
+>>>>>>> github/macOS
     }
 }
