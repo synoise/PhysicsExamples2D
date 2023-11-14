@@ -27,6 +27,6 @@ public class ZombieAI : MonoBehaviour
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + offset));
         
         Body.AddForce(new Vector2(targetPos.x, targetPos.y) * Time.deltaTime * 0.01f);
-        // Body.AddRelativeForce(new Vector3(1, 0,0));
+        Body.AddRelativeForce(new Vector3(1, 0,0));
     }
 }
