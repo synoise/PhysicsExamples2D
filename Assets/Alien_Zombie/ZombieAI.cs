@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class ZombieAI : MonoBehaviour
 {
-    
+
     public float offset;
-        
+
     public Transform target;
     private Vector3 targetPos;
     private Vector3 thisPos;
@@ -16,7 +16,7 @@ public class ZombieAI : MonoBehaviour
     {
         Body = GetComponent<Rigidbody2D>();
     }
-        
+
     void LateUpdate()
     {
         targetPos = target.position;
@@ -25,8 +25,8 @@ public class ZombieAI : MonoBehaviour
         targetPos.y = targetPos.y - thisPos.y;
         angle = Mathf.Atan2(targetPos.y, targetPos.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + offset));
-        
-        Body.AddForce(new Vector2(targetPos.x, targetPos.y) * Time.deltaTime * 0.01f);
+
+        Body.AddForce(new Vector2(targetPos.x, targetPos.y) * Time.deltaTime * 5f);
         // Body.AddRelativeForce(new Vector3(1, 0,0));
     }
 }
