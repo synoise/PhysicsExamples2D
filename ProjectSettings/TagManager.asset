@@ -5,14 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Avatar
-  - Zombie
+  - Gold
+  - Enemy
   - Bullet
-  - New tag
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
   - 
