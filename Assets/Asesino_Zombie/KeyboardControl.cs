@@ -52,11 +52,11 @@ public class KeyboardControl : MonoBehaviour
             if (Input.GetAxisRaw("Horizontal") < 0)
             {
             
-                rb.AddForce(new Vector2(-0.001f, 0), ForceMode2D.Impulse);
+                rb.AddForce(new Vector2(-0.1f, 0), ForceMode2D.Impulse);
             }
             if (Input.GetAxisRaw("Horizontal") > 0)
             {
-                rb.AddForce(new Vector2(0.001f, 0), ForceMode2D.Impulse);
+                rb.AddForce(new Vector2(0.1f, 0), ForceMode2D.Impulse);
             }
             // if ((Input.GetKeyDown("Jump") || Input.GetAxisRaw("Vertical") > 0))
             // {
@@ -71,13 +71,13 @@ public class KeyboardControl : MonoBehaviour
             
             if (Input.GetKey("up"))
             {
-                rb.AddForce(new Vector2(0, 0.001f), ForceMode2D.Impulse);
+                rb.AddForce(new Vector2(0, 0.1f), ForceMode2D.Impulse);
             }
 
             if (Input.GetKey("down"))
             {
            
-                rb.AddForce(new Vector2(0, -0.001f), ForceMode2D.Impulse);
+                rb.AddForce(new Vector2(0, -0.1f), ForceMode2D.Impulse);
             }
             
      
@@ -101,7 +101,7 @@ public class KeyboardControl : MonoBehaviour
                     transform.rotation);
  
                 ball.GetComponent<Rigidbody2D>().AddRelativeForce(new Vector3 
-                    (1500, 0,0));
+                    (0, 1500,0));
                 
                 //         ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 0.001f), ForceMode2D.Impulse);
             }

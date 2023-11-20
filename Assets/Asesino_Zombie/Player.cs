@@ -26,6 +26,18 @@ void Update()
     float AngleRad = Mathf.Atan2 (mouse.y - my.position.y, mouse.x - my.position.x);
     float angle = (180 / Mathf.PI) * AngleRad;
 
-    body.rotation = angle;
+    body.rotation = angle-90;
 }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        Debug.Log("OnCollisionEnter2D " + col.collider.tag);
+
+        if (col.gameObject.CompareTag("Zombie"))
+        {
+            Destroy(gameObject);
+        } 
+            
+    }
+
 }
