@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody2D rb;
     Camera cam;
+    [SerializeField] Animator anim;
 
     Vector2 movement;
     Vector2 mousePos;
@@ -36,5 +37,14 @@ public class PlayerMovement : MonoBehaviour
         Vector2 lookDir = mousePos - rb.position;
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = angle;
+
+        if (movement != Vector2.zero)
+        {
+            anim.SetBool("isRunning", true);
+        }
+        else
+        {
+            anim.SetBool("isRunning", false);
+        }
     }
 }
