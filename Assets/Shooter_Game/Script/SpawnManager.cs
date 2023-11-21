@@ -22,7 +22,7 @@ public class SpawnManager : MonoBehaviour
             yield return new WaitForSeconds(interval);
 
             int _spawnIndex = Random.Range(0, spawners.Length);
-            Instantiate(enemyPrefab, spawners[_spawnIndex]);
+            Instantiate(enemyPrefab, spawners[_spawnIndex].transform);
         }
     }
 }
