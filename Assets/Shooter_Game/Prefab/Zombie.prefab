@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 7193630146289666868}
   - component: {fileID: 95962678473604153}
   - component: {fileID: 1488778139749270597}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Zombie
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1032
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -426,6 +426,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 3a187feab1b578048b0b7c83f9cae19a, type: 2}
+    - target: {fileID: 9500000, guid: 887cc9cbcc10e8c45b6262198cc15ee6, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
