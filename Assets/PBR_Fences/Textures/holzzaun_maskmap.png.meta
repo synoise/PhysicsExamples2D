@@ -1,0 +1,1240 @@
+fileFormatVersion: 2
+guid: 58aba877bfc842847a223fc4d377ca09
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8188448794056719321
+    second: holzzaun_maskmap_0
+  - first:
+      213: 7871180237228616656
+    second: holzzaun_maskmap_1
+  - first:
+      213: 9214742239472643621
+    second: holzzaun_maskmap_2
+  - first:
+      213: -2038666490053198760
+    second: holzzaun_maskmap_3
+  - first:
+      213: 2944195837869742487
+    second: holzzaun_maskmap_4
+  - first:
+      213: -1719589673839385379
+    second: holzzaun_maskmap_5
+  - first:
+      213: 3379532628535531703
+    second: holzzaun_maskmap_6
+  - first:
+      213: 3715944181080250404
+    second: holzzaun_maskmap_7
+  - first:
+      213: -2925151044212396022
+    second: holzzaun_maskmap_8
+  - first:
+      213: 5996363174237985571
+    second: holzzaun_maskmap_9
+  - first:
+      213: -4318764290897963259
+    second: holzzaun_maskmap_10
+  - first:
+      213: 6970733496892515462
+    second: holzzaun_maskmap_11
+  - first:
+      213: -6587708597816476918
+    second: holzzaun_maskmap_12
+  - first:
+      213: -4612211759115154203
+    second: holzzaun_maskmap_13
+  - first:
+      213: -393445332508419882
+    second: holzzaun_maskmap_14
+  - first:
+      213: 2683083703732656502
+    second: holzzaun_maskmap_15
+  - first:
+      213: -1142020655566610494
+    second: holzzaun_maskmap_16
+  - first:
+      213: -2995483306401000596
+    second: holzzaun_maskmap_17
+  - first:
+      213: -4743354924673657577
+    second: holzzaun_maskmap_18
+  - first:
+      213: 385951446902591846
+    second: holzzaun_maskmap_19
+  - first:
+      213: -4704859735055583110
+    second: holzzaun_maskmap_20
+  - first:
+      213: -8374237116149810791
+    second: holzzaun_maskmap_21
+  - first:
+      213: -5457618620494664486
+    second: holzzaun_maskmap_22
+  - first:
+      213: 2195361702701800493
+    second: holzzaun_maskmap_23
+  - first:
+      213: 2220202461061238037
+    second: holzzaun_maskmap_24
+  - first:
+      213: -5689010817507660656
+    second: holzzaun_maskmap_25
+  - first:
+      213: 8664553875120161860
+    second: holzzaun_maskmap_26
+  - first:
+      213: 5548613358485442486
+    second: holzzaun_maskmap_27
+  - first:
+      213: -5223601678935903035
+    second: holzzaun_maskmap_28
+  - first:
+      213: 707667287193348803
+    second: holzzaun_maskmap_29
+  - first:
+      213: 4673904536532730721
+    second: holzzaun_maskmap_30
+  - first:
+      213: -5336217303324109009
+    second: holzzaun_maskmap_31
+  - first:
+      213: 4090730686432311397
+    second: holzzaun_maskmap_32
+  - first:
+      213: -8515574200100212908
+    second: holzzaun_maskmap_33
+  - first:
+      213: -2880629467458720270
+    second: holzzaun_maskmap_34
+  - first:
+      213: -1935426130293552994
+    second: holzzaun_maskmap_35
+  - first:
+      213: -2943570199327268807
+    second: holzzaun_maskmap_36
+  - first:
+      213: -2838135300184431953
+    second: holzzaun_maskmap_37
+  - first:
+      213: 578594996607215288
+    second: holzzaun_maskmap_38
+  - first:
+      213: -7259655387213939033
+    second: holzzaun_maskmap_39
+  - first:
+      213: 3373021355242784614
+    second: holzzaun_maskmap_40
+  - first:
+      213: -4701245434067676511
+    second: holzzaun_maskmap_41
+  - first:
+      213: -7340159126992665734
+    second: holzzaun_maskmap_42
+  - first:
+      213: 6713671555944748544
+    second: holzzaun_maskmap_43
+  - first:
+      213: 3987042233555096416
+    second: holzzaun_maskmap_44
+  - first:
+      213: 390428443998717593
+    second: holzzaun_maskmap_45
+  - first:
+      213: 2310077124550469056
+    second: holzzaun_maskmap_46
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: holzzaun_maskmap_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2371
+        width: 1021
+        height: 1722
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72406c0c439cc5e80800000000000000
+      internalID: -8188448794056719321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_1
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 2371
+        width: 2028
+        height: 1722
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db2613f8bc0c3d60800000000000000
+      internalID: 7871180237228616656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_2
+      rect:
+        serializedVersion: 2
+        x: 3064
+        y: 2377
+        width: 63
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52eed88be3751ef70800000000000000
+      internalID: 9214742239472643621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_3
+      rect:
+        serializedVersion: 2
+        x: 3126
+        y: 2377
+        width: 123
+        height: 1701
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85cf2ece0a335b3e0800000000000000
+      internalID: -2038666490053198760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_4
+      rect:
+        serializedVersion: 2
+        x: 3249
+        y: 2377
+        width: 32
+        height: 1705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 799d869f382ebd820800000000000000
+      internalID: 2944195837869742487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_5
+      rect:
+        serializedVersion: 2
+        x: 3283
+        y: 2377
+        width: 32
+        height: 1701
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd4af5b6d4ac228e0800000000000000
+      internalID: -1719589673839385379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_6
+      rect:
+        serializedVersion: 2
+        x: 3315
+        y: 2377
+        width: 89
+        height: 1710
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b8d3b6250386ee20800000000000000
+      internalID: 3379532628535531703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_7
+      rect:
+        serializedVersion: 2
+        x: 3403
+        y: 2377
+        width: 33
+        height: 1705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 428d7767b8fa19330800000000000000
+      internalID: 3715944181080250404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_8
+      rect:
+        serializedVersion: 2
+        x: 3439
+        y: 2377
+        width: 89
+        height: 1701
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a007b579f96c767d0800000000000000
+      internalID: -2925151044212396022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_9
+      rect:
+        serializedVersion: 2
+        x: 3528
+        y: 2377
+        width: 32
+        height: 1701
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b50b0798c573350800000000000000
+      internalID: 5996363174237985571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_10
+      rect:
+        serializedVersion: 2
+        x: 3562
+        y: 2377
+        width: 32
+        height: 1701
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507926c52caa014c0800000000000000
+      internalID: -4318764290897963259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_11
+      rect:
+        serializedVersion: 2
+        x: 3594
+        y: 2377
+        width: 117
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 684e132de250db060800000000000000
+      internalID: 6970733496892515462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_12
+      rect:
+        serializedVersion: 2
+        x: 3711
+        y: 2377
+        width: 32
+        height: 1698
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0bbc57fee1c394a0800000000000000
+      internalID: -6587708597816476918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_13
+      rect:
+        serializedVersion: 2
+        x: 3745
+        y: 2377
+        width: 92
+        height: 1705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eccf0577d12effb0800000000000000
+      internalID: -4612211759115154203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_14
+      rect:
+        serializedVersion: 2
+        x: 3837
+        y: 2377
+        width: 61
+        height: 1710
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d8dc4dfd833a8af0800000000000000
+      internalID: -393445332508419882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_15
+      rect:
+        serializedVersion: 2
+        x: 3897
+        y: 2377
+        width: 33
+        height: 1701
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 679df97b96a3c3520800000000000000
+      internalID: 2683083703732656502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_16
+      rect:
+        serializedVersion: 2
+        x: 3930
+        y: 2377
+        width: 149
+        height: 1705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf1bc2b34ab620f0800000000000000
+      internalID: -1142020655566610494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_17
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 650
+        width: 1021
+        height: 1722
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c631b57bdc7ed66d0800000000000000
+      internalID: -2995483306401000596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_18
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 650
+        width: 2028
+        height: 1722
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7151a3fc3d73c2eb0800000000000000
+      internalID: -4743354924673657577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_19
+      rect:
+        serializedVersion: 2
+        x: 3064
+        y: 651
+        width: 63
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6615d2dcbcc2b5500800000000000000
+      internalID: 385951446902591846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_20
+      rect:
+        serializedVersion: 2
+        x: 3126
+        y: 651
+        width: 123
+        height: 1705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7839f59ffaf4beb0800000000000000
+      internalID: -4704859735055583110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_21
+      rect:
+        serializedVersion: 2
+        x: 3249
+        y: 651
+        width: 32
+        height: 1702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 999bff226bbb8cb80800000000000000
+      internalID: -8374237116149810791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_22
+      rect:
+        serializedVersion: 2
+        x: 3283
+        y: 651
+        width: 32
+        height: 1698
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adcabd5c7c4a244b0800000000000000
+      internalID: -5457618620494664486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_23
+      rect:
+        serializedVersion: 2
+        x: 3315
+        y: 651
+        width: 89
+        height: 1710
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c990b46dd777e10800000000000000
+      internalID: 2195361702701800493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_24
+      rect:
+        serializedVersion: 2
+        x: 3403
+        y: 651
+        width: 33
+        height: 1702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51dc00d006ebfce10800000000000000
+      internalID: 2220202461061238037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_25
+      rect:
+        serializedVersion: 2
+        x: 3439
+        y: 651
+        width: 89
+        height: 1702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ce91b9dc29c01b0800000000000000
+      internalID: -5689010817507660656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_26
+      rect:
+        serializedVersion: 2
+        x: 3528
+        y: 651
+        width: 32
+        height: 1702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44485c7b7ddae3870800000000000000
+      internalID: 8664553875120161860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_27
+      rect:
+        serializedVersion: 2
+        x: 3562
+        y: 651
+        width: 32
+        height: 1702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf0384a372a00d40800000000000000
+      internalID: 5548613358485442486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_28
+      rect:
+        serializedVersion: 2
+        x: 3594
+        y: 651
+        width: 117
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c434e6e2f90287b0800000000000000
+      internalID: -5223601678935903035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_29
+      rect:
+        serializedVersion: 2
+        x: 3711
+        y: 651
+        width: 32
+        height: 1702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cae258f5a322d900800000000000000
+      internalID: 707667287193348803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_30
+      rect:
+        serializedVersion: 2
+        x: 3745
+        y: 651
+        width: 92
+        height: 1705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163ce1e996b0dd040800000000000000
+      internalID: 4673904536532730721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_31
+      rect:
+        serializedVersion: 2
+        x: 3837
+        y: 651
+        width: 61
+        height: 1710
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27d21792a2f1f5b0800000000000000
+      internalID: -5336217303324109009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_32
+      rect:
+        serializedVersion: 2
+        x: 3897
+        y: 651
+        width: 33
+        height: 1705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568769cb2e135c830800000000000000
+      internalID: 4090730686432311397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_33
+      rect:
+        serializedVersion: 2
+        x: 3930
+        y: 651
+        width: 149
+        height: 1702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45fab88e16a92d980800000000000000
+      internalID: -8515574200100212908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_34
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4
+        width: 1769
+        height: 646
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fda996f2c2f508d0800000000000000
+      internalID: -2880629467458720270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_35
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 563
+        width: 1731
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9808d6503cf325e0800000000000000
+      internalID: -1935426130293552994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_36
+      rect:
+        serializedVersion: 2
+        x: 3517
+        y: 400
+        width: 359
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9302ca9df765627d0800000000000000
+      internalID: -2943570199327268807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_37
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 590
+        width: 136
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2a2084bfaec98d0800000000000000
+      internalID: -2838135300184431953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_38
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 477
+        width: 1731
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b667997515970800800000000000000
+      internalID: 578594996607215288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_39
+      rect:
+        serializedVersion: 2
+        x: 3883
+        y: 399
+        width: 171
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aebc5d73e5804b90800000000000000
+      internalID: -7259655387213939033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_40
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 389
+        width: 1731
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6678d033d016fce20800000000000000
+      internalID: 3373021355242784614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_41
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 303
+        width: 1731
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a2187c9f22d1ceb0800000000000000
+      internalID: -4701245434067676511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_42
+      rect:
+        serializedVersion: 2
+        x: 3515
+        y: 16
+        width: 572
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a73c2c0f924822a90800000000000000
+      internalID: -7340159126992665734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_43
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 227
+        width: 1731
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0061bb6a5b0cb2d50800000000000000
+      internalID: 6713671555944748544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_44
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 154
+        width: 1731
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063188389c1d45730800000000000000
+      internalID: 3987042233555096416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_45
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 82
+        width: 1731
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99680cae9941b6500800000000000000
+      internalID: 390428443998717593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holzzaun_maskmap_46
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 11
+        width: 1731
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5269cc7ea0f0020800000000000000
+      internalID: 2310077124550469056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
