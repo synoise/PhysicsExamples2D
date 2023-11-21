@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Other_AlbedoPachy_0: 8966978053738171179
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alien-panels_ao_0: 63638604845572407
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alien-panels_height_0: -1690589268937278308
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

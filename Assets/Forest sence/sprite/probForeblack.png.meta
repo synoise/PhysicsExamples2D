@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      probForeblack_0: 8055140546534301349
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

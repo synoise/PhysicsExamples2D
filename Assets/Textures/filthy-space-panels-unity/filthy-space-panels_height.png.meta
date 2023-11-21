@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      filthy-space-panels_height_0: -7152228307766851096
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

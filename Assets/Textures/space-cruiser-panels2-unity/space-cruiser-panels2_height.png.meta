@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      space-cruiser-panels2_height_0: 6463080464336267522
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

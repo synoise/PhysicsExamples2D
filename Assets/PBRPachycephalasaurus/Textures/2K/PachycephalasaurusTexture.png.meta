@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PachycephalasaurusTexture_0: -3654086667675087996
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

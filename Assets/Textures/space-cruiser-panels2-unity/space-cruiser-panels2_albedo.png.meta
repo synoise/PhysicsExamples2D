@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      space-cruiser-panels2_albedo_0: -8704317867635158705
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

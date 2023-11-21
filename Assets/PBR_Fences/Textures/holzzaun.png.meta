@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      holzzaun_0: 7598605572746306626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

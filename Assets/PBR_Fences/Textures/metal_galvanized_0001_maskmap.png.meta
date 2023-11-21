@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      metal_galvanized_0001_maskmap_0: -866718544299449561
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

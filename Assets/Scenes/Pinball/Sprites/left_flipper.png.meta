@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      left_flipper_0: -1111338414947415291
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

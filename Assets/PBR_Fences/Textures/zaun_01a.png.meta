@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      zaun_01a_0: -2603186170797110217
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

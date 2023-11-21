@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -47,4 +48,17 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("isRunning", false);
         }
     }
+    
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        Debug.Log("OnCollisionEnter2D " + col.collider.tag);
+        if (col.gameObject.CompareTag("Enemy"))
+        {
+            string currentSceneName = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene(currentSceneName);
+        }
+    }
+    
+    // void Update(){}
 }
+

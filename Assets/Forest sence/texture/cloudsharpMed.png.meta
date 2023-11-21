@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cloudsharpMed_0: 2673348625828068607
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

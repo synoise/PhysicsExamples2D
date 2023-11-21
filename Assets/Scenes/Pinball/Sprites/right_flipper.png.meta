@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      right_flipper_0: 8168078357917939251
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

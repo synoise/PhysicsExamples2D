@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pachycephalasaurus_Scales_Albedo_0: -8797198074422284366
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

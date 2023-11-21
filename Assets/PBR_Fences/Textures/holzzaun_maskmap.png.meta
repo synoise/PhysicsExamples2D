@@ -1232,7 +1232,54 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      holzzaun_maskmap_0: -8188448794056719321
+      holzzaun_maskmap_1: 7871180237228616656
+      holzzaun_maskmap_10: -4318764290897963259
+      holzzaun_maskmap_11: 6970733496892515462
+      holzzaun_maskmap_12: -6587708597816476918
+      holzzaun_maskmap_13: -4612211759115154203
+      holzzaun_maskmap_14: -393445332508419882
+      holzzaun_maskmap_15: 2683083703732656502
+      holzzaun_maskmap_16: -1142020655566610494
+      holzzaun_maskmap_17: -2995483306401000596
+      holzzaun_maskmap_18: -4743354924673657577
+      holzzaun_maskmap_19: 385951446902591846
+      holzzaun_maskmap_2: 9214742239472643621
+      holzzaun_maskmap_20: -4704859735055583110
+      holzzaun_maskmap_21: -8374237116149810791
+      holzzaun_maskmap_22: -5457618620494664486
+      holzzaun_maskmap_23: 2195361702701800493
+      holzzaun_maskmap_24: 2220202461061238037
+      holzzaun_maskmap_25: -5689010817507660656
+      holzzaun_maskmap_26: 8664553875120161860
+      holzzaun_maskmap_27: 5548613358485442486
+      holzzaun_maskmap_28: -5223601678935903035
+      holzzaun_maskmap_29: 707667287193348803
+      holzzaun_maskmap_3: -2038666490053198760
+      holzzaun_maskmap_30: 4673904536532730721
+      holzzaun_maskmap_31: -5336217303324109009
+      holzzaun_maskmap_32: 4090730686432311397
+      holzzaun_maskmap_33: -8515574200100212908
+      holzzaun_maskmap_34: -2880629467458720270
+      holzzaun_maskmap_35: -1935426130293552994
+      holzzaun_maskmap_36: -2943570199327268807
+      holzzaun_maskmap_37: -2838135300184431953
+      holzzaun_maskmap_38: 578594996607215288
+      holzzaun_maskmap_39: -7259655387213939033
+      holzzaun_maskmap_4: 2944195837869742487
+      holzzaun_maskmap_40: 3373021355242784614
+      holzzaun_maskmap_41: -4701245434067676511
+      holzzaun_maskmap_42: -7340159126992665734
+      holzzaun_maskmap_43: 6713671555944748544
+      holzzaun_maskmap_44: 3987042233555096416
+      holzzaun_maskmap_45: 390428443998717593
+      holzzaun_maskmap_46: 2310077124550469056
+      holzzaun_maskmap_5: -1719589673839385379
+      holzzaun_maskmap_6: 3379532628535531703
+      holzzaun_maskmap_7: 3715944181080250404
+      holzzaun_maskmap_8: -2925151044212396022
+      holzzaun_maskmap_9: 5996363174237985571
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

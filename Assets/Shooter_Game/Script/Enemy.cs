@@ -43,6 +43,7 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("OnCollisionEnter2D zombie " + collision.collider.tag);
         if (collision.gameObject.CompareTag("Bullet"))
         {
             OnHit();

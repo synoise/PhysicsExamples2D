@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      space-cruiser-panels2_metallic_0: 7636068938791005205
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

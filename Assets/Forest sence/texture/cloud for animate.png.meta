@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cloud for animate_0: 4744460776128097928
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

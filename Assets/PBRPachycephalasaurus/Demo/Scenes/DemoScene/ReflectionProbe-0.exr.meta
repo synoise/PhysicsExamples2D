@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ReflectionProbe-0_0: -6178708042526665401
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

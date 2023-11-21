@@ -152,7 +152,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sound_on_0: 6297055232021531023
+      sound_on_1: 4162165878321240326
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

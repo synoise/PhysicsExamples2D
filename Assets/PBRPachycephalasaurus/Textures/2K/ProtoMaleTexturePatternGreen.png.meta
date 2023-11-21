@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ProtoMaleTexturePatternGreen_0: 7482211140983407386
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
