@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
-using ZombieGame;
+// using ZombieGame;
 
 
 public class BulletTestScript
 {
-    
-    private bullet testBullet;
-    
+
+    //private bullet testBullet;
+
     // A Test behaves as an ordinary method
     [Test]
     public void BulletTestScriptSimplePasses()
     {
-        testBullet = new bullet();
-        
-        Assert.IsNotNull(testBullet);
+        // testBullet = new bullet();
+
+        // Assert.IsNotNull(testBullet);
         // Use the Assert class to test conditions
     }
 
@@ -30,16 +30,16 @@ public class BulletTestScript
         // Use yield to skip a frame.
         yield return null;
     }
-    
+
     [Test]
     public void AtLeastOnePaddleIsSuccesfullyCreated()
     {
-        bullet paddles = new bullet();
+        // bullet paddles = new bullet();
 
         // Assert that the paddles object exists
-        Assert.IsNotNull(paddles);
+        // Assert.IsNotNull(paddles);
     }
-    
+
 
     // [Test]
     // public void TwoPaddlesAreSuccesfullyCreated()

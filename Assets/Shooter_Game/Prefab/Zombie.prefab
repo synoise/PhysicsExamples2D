@@ -97,8 +97,8 @@ GameObject:
   - component: {fileID: 1491037535965526031}
   - component: {fileID: 7477019148660064571}
   - component: {fileID: 7193630146289666868}
-  - component: {fileID: 5886401290497463645}
   - component: {fileID: 95962678473604153}
+  - component: {fileID: 1488778139749270597}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Enemy
@@ -226,19 +226,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5886401290497463645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3843842614551226203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a287f8266a43d8419ab9fcf1a7901ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3
 --- !u!61 &95962678473604153
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -285,6 +272,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.8709044, y: 3.6995015}
   m_EdgeRadius: 0
+--- !u!114 &1488778139749270597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3843842614551226203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045d7e4a3564b4044926311a46355270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
 --- !u!1 &7381371516145155492
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +425,7 @@ PrefabInstance:
     - target: {fileID: 9500000, guid: 887cc9cbcc10e8c45b6262198cc15ee6, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 4a74256cf59302a4b9178c3f9fc26abe, type: 2}
+      objectReference: {fileID: 9100000, guid: 3a187feab1b578048b0b7c83f9cae19a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
