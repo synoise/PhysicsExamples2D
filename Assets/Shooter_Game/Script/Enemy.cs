@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -8,7 +10,9 @@ public class Enemy : MonoBehaviour
     private bool isChasing;
 
     private Transform target;
-
+    
+    [SerializeField] private TMP_Text score;
+    
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
@@ -47,6 +51,8 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet"))
         {
             OnHit();
+            score = GameObject.Find("Score").GetComponent<TMP_Text>();
+            score.text = (int.Parse(score.text) + 1).ToString();
         }
     }
 }
