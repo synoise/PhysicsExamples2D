@@ -4,4 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Shooter_Game/MainMenu.unity
+    guid: 4286c21616f7c2b4c9c0ed395ca17445
+  - enabled: 1
+    path: Assets/Shooter_Game/Shooter3DScene.unity
+    guid: 0aca8a39139593846a6d8ea858f6ded3
+  m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
