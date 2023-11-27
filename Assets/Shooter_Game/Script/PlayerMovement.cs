@@ -5,60 +5,52 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private Rigidbody _rb;
+    [SerializeField] private float _speed = 5;
+    [SerializeField] private float _turnSpeed = 360;
+    [SerializeField] private Animator _animator;
+    private Vector3 _input;
 
-    [SerializeField] float moveSpeed = 5f;
-
-    Rigidbody2D rb;
-    Camera cam;
-    [SerializeField] Animator anim;
-
-    Vector2 movement;
-    Vector2 mousePos;
-
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        rb = GetComponent<Rigidbody2D>();
-        cam = Camera.main;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-
-        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        GatherInput();
+        Look();
     }
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-
-        Vector2 lookDir = mousePos - rb.position;
-        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
-        rb.rotation = angle;
-
-        if (movement != Vector2.zero)
-        {
-            anim.SetBool("isRunning", true);
-        }
-        else
-        {
-            anim.SetBool("isRunning", false);
-        }
+        Move();
     }
-    
-    void OnCollisionEnter2D(Collision2D col)
+
+    private void GatherInput()
     {
-        Debug.Log("OnCollisionEnter2D " + col.collider.tag);
-        if (col.gameObject.CompareTag("Enemy"))
-        {
-            string currentSceneName = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene(currentSceneName);
-        }
+        _input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+        if (_input != Vector3.zero)
+            _animator.SetBool("isRunning", true);
+        else
+            _animator.SetBool("isRunning", false);
+
+
     }
-    
-    // void Update(){}
+
+    private void Look()
+    {
+        if (_input == Vector3.zero) return;
+
+        var rot = Quaternion.LookRotation(_input.ToIso(), Vector3.up);
+        //transform.rotation = Quaternion.RotateTowards(transform.rotation, rot, _turnSpeed * Time.deltaTime);
+        transform.rotation = rot;
+    }
+
+    private void Move()
+    {
+        _rb.MovePosition(transform.position + transform.forward * _input.normalized.magnitude * _speed * Time.deltaTime);
+    }
+}
+
+public static class Helpers
+{
+    private static Matrix4x4 _isoMatrix = Matrix4x4.Rotate(Quaternion.Euler(0, 45, 0));
+    public static Vector3 ToIso(this Vector3 input) => _isoMatrix.MultiplyPoint3x4(input);
 }
 
