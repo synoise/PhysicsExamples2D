@@ -52,10 +52,8 @@ public class PlayerMovement : MonoBehaviour
         _rb.MovePosition(transform.position + transform.forward * _input.normalized.magnitude * _speed * Time.deltaTime);
         StartCoroutine(setCameraDelay(transform.position.x,transform.position.z));
         // move.Normalize();
- 
     }
 }
-
 
 
 public static class Helpers

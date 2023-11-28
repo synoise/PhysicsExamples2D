@@ -9,12 +9,7 @@ public class Shooting : MonoBehaviour
 
     [SerializeField] float bulletForce = 20f;
 
-    Animator playerAnimator;
-
-    private void Start()
-    {
-        playerAnimator = GetComponent<Animator>();
-    }
+    [SerializeField] Animator playerAnimator;
 
     private void Update()
     {
@@ -26,11 +21,34 @@ public class Shooting : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject _bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Rigidbody2D _bulletRb = _bullet.GetComponent<Rigidbody2D>();
+        Look();
 
-        _bulletRb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        GameObject _bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Rigidbody _bulletRb = _bullet.GetComponent<Rigidbody>();
+
+        _bulletRb.AddForce(firePoint.forward * bulletForce, ForceMode.Impulse);
 
         playerAnimator.SetTrigger("Shoot");
+    }
+
+    private void Look()
+    {
+        // Raycast from the camera to the ground to get the intersection point
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            // Get the intersection point as the target position
+            Vector3 targetPosition = hit.point;
+
+            // Calculate direction vector
+            Vector3 direction = targetPosition - transform.position;
+            direction.y = 0; // Ensure the direction is in the horizontal plane.
+
+            // Rotate the character
+            Quaternion rotation = Quaternion.LookRotation(direction);
+            transform.rotation = rotation;
+        }
     }
 }
