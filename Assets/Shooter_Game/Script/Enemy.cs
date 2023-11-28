@@ -37,8 +37,8 @@ public class Enemy : MonoBehaviour
     private void RotateToTarget(Transform target)
     {
         Vector3 difference = target.position - transform.position;
-        float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg - 90f;
-        transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
+        float rotationY = Mathf.Atan2(difference.x, difference.z) * Mathf.Rad2Deg ;
+        transform.rotation = Quaternion.Euler(0.0f, rotationY, 0.0f);
     }
     private void OnHit()
     {

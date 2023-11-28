@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _speed = 5;
     [SerializeField] private float _turnSpeed = 360;
     [SerializeField] private Animator _animator;
+    [SerializeField] private Transform _mainCamera;
     private Vector3 _input;
 
     private void Update()
@@ -42,11 +43,22 @@ public class PlayerMovement : MonoBehaviour
         transform.rotation = rot;
     }
 
+    IEnumerator setCameraDelay(float moveDelayX, float moveDelayZ)
+    {
+        yield return new WaitForSeconds(0.6f);
+        _mainCamera.transform.position = new Vector3(moveDelayX, 0f, moveDelayZ); 
+    }
+    
     private void Move()
     {
         _rb.MovePosition(transform.position + transform.forward * _input.normalized.magnitude * _speed * Time.deltaTime);
+        StartCoroutine(setCameraDelay(transform.position.x,transform.position.z));
+        // move.Normalize();
+ 
     }
 }
+
+
 
 public static class Helpers
 {
