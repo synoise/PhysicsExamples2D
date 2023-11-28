@@ -30,8 +30,6 @@ public class PlayerMovement : MonoBehaviour
             _animator.SetBool("isRunning", true);
         else
             _animator.SetBool("isRunning", false);
-
-
     }
 
     private void Look()
