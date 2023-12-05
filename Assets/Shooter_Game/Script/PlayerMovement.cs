@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
     private void Move()
     {
         _rb.MovePosition(transform.position + transform.forward * _input.normalized.magnitude * _speed * Time.deltaTime);
-        StartCoroutine(setCameraDelay(transform.position.x,transform.position.z));
+        //StartCoroutine(setCameraDelay(transform.position.x,transform.position.z));
         // move.Normalize();
     }
 }

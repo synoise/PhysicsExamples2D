@@ -33,7 +33,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-
     private void RotateToTarget(Transform target)
     {
         Vector3 difference = target.position - transform.position;
@@ -45,14 +44,13 @@ public class Enemy : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("OnCollisionEnter2D zombie " + collision.collider.tag);
+        Debug.Log(collision);
         if (collision.gameObject.CompareTag("Bullet"))
         {
             OnHit();
-            score = GameObject.Find("Score").GetComponent<TMP_Text>();
-            score.text = (int.Parse(score.text) + 1).ToString();
+            //score.text = (int.Parse(score.text) + 1).ToString();
         }
     }
 }
