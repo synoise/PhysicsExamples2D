@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+// using Asesino_Zombie;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
@@ -11,11 +12,12 @@ public class BulletTestScript
 
     //private bullet testBullet;
 
+    
     // A Test behaves as an ordinary method
     [Test]
     public void BulletTestScriptSimplePasses()
     {
-        // testBullet = new bullet();
+         // testBullet = new bullet();
 
         // Assert.IsNotNull(testBullet);
         // Use the Assert class to test conditions

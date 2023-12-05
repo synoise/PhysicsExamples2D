@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace theGame
+namespace TheGame
 {
     public class Pacman : MonoBehaviour
     {
@@ -8,7 +8,7 @@ namespace theGame
 
         public int calculate(int a, int b)
         {
-            var c = a * b;//+ power(a+1);
+            var c = a * b + power(a+1);
             return c;
         }
 
