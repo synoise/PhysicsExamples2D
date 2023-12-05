@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -41,6 +42,7 @@ public class Enemy : MonoBehaviour
     }
     private void OnHit()
     {
+        EventsManager.OnEnemyDied();
         Destroy(this.gameObject);
     }
 
