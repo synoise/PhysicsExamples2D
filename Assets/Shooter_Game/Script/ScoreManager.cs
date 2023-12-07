@@ -6,9 +6,23 @@ using System.Security.Cryptography;
 
 public class ScoreManager : MonoBehaviour
 {
+    public static ScoreManager Instance { get; private set; }
+
     [SerializeField] TMP_Text scoreText;
 
     int score;
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
 
     private void OnEnable()
     {
