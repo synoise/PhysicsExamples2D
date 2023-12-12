@@ -17,15 +17,21 @@ public class HighscoreTable : MonoBehaviour
 
         entryTemplate.gameObject.SetActive(false);
 
-        AddHighscoreEntry(1995, "bapakaku");
+        // AddHighscoreEntry(8989898, "kamu");
 
-        // highscoreEntryList = new List<HighscoreEntry>(){
+        // List<HighscoreEntry> highscoreEntryList = new List<HighscoreEntry>(){
         //     new HighscoreEntry{ score = 5184, name = "AAA"},
         //     new HighscoreEntry{ score = 3142, name = "ArA"},
         //     new HighscoreEntry{ score = 2454, name = "123"},
         //     new HighscoreEntry{ score = 7000, name = "AAb"},
         //     new HighscoreEntry{ score = 9090, name = "AsA"},
         // };
+
+        // Highscore highscore = new Highscore { highscoreEntryList = highscoreEntryList };
+        // string json = JsonUtility.ToJson(highscoreEntryList);
+        // PlayerPrefs.SetString("highscoreTable", json);
+        // PlayerPrefs.Save();
+        // Debug.Log(PlayerPrefs.GetString("highscoreTable"));
 
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         Highscore highscore = JsonUtility.FromJson<Highscore>(jsonString);
@@ -48,12 +54,6 @@ public class HighscoreTable : MonoBehaviour
         {
             CreateHighscoreEntryTransform(highscoreEntry, entryContainer, highscoreEntryTranformList);
         }
-
-        // Highscore highscore = new Highscore { highscoreEntryList = highscoreEntryList };
-        // string json = JsonUtility.ToJson(highscoreEntryList);
-        // PlayerPrefs.SetString("highscoreTable", "json");
-        // PlayerPrefs.Save();
-        // Debug.Log(PlayerPrefs.GetString("highscoreTable"));
 
     }
 
@@ -87,7 +87,7 @@ public class HighscoreTable : MonoBehaviour
         transformList.Add(entryTransform);
     }
 
-    private void AddHighscoreEntry(int score, string name)
+    public void AddHighscoreEntry(int score, string name)
     {
         HighscoreEntry highscoreEntry = new HighscoreEntry { score = score, name = name };
 
