@@ -14,12 +14,16 @@ public class Enemy : MonoBehaviour
 
     private Transform target;
     [SerializeField] Animator animator;
-    
+
+    private CapsuleCollider enemyCollider;
+
     void Start()
     {
+        enemyCollider = GetComponent<CapsuleCollider>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
         
         isChasing = true;
+        animator.SetBool("isAlive", true);
         StartCoroutine(Chase());
     }
 
@@ -27,6 +31,7 @@ public class Enemy : MonoBehaviour
     {
         while (isChasing)
         {
+
             transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
             RotateToTarget(target);
 
@@ -38,9 +43,10 @@ public class Enemy : MonoBehaviour
     private void RotateToTarget(Transform target)
     {
         Vector3 difference = target.position - transform.position;
-        float rotationY = Mathf.Atan2(difference.x, difference.z) * Mathf.Rad2Deg ;
+        float rotationY = Mathf.Atan2(difference.x, difference.z) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0.0f, rotationY, 0.0f);
     }
+
     private IEnumerator OnHit()
     {
         health--;
@@ -49,9 +55,15 @@ public class Enemy : MonoBehaviour
 
         yield return new WaitForSeconds(0.2f);
 
-        if (health <= 0)
+        if (health <= 0 && animator.GetBool("isAlive"))
         {
             EventsManager.OnEnemyDied();
+            animator.SetBool("isAlive", false);
+            //enemyCollider.enabled = false;
+            StopAllCoroutines();
+
+            yield return new WaitForSeconds(5f);
+
             Destroy(gameObject);
         }
 

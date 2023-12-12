@@ -136,7 +136,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   animator: {fileID: 8469701363457728141}
-  score: {fileID: 0}
 --- !u!136 &970457024199801421
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -168,7 +167,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3843842614551226203}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
