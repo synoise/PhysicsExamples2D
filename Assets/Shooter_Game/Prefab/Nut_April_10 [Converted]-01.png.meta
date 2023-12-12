@@ -392,7 +392,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Nut_April_10 [Converted]-01_0: 2062298174481150177
+      Nut_April_10 [Converted]-01_1: -8484237162286765843
+      Nut_April_10 [Converted]-01_10: -6009362039509012678
+      Nut_April_10 [Converted]-01_2: 7516526808147047087
+      Nut_April_10 [Converted]-01_3: 4321210466068694706
+      Nut_April_10 [Converted]-01_4: 538995979179617666
+      Nut_April_10 [Converted]-01_5: -792009030928556762
+      Nut_April_10 [Converted]-01_6: 9085452207820007837
+      Nut_April_10 [Converted]-01_7: -2654955008145818841
+      Nut_April_10 [Converted]-01_8: 4131830737281646441
+      Nut_April_10 [Converted]-01_9: -8199188686933885146
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
