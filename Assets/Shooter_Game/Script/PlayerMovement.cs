@@ -12,14 +12,22 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform _mainCamera;
     private Vector3 _input;
 
+    private bool canMove = true;
+
     private void Update()
     {
+        if (!canMove)
+            return;
+
         GatherInput();
         Look();
     }
 
     private void FixedUpdate()
     {
+        if (!canMove)
+            return;
+
         Move();
     }
 
@@ -52,6 +60,11 @@ public class PlayerMovement : MonoBehaviour
         _rb.MovePosition(transform.position + transform.forward * _input.normalized.magnitude * _speed * Time.deltaTime);
         //StartCoroutine(setCameraDelay(transform.position.x,transform.position.z));
         // move.Normalize();
+    }
+
+    public void SetMove(bool status)
+    {
+        canMove = status;
     }
 }
 

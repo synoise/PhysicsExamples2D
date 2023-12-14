@@ -35,6 +35,7 @@ public class Enemy : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
             RotateToTarget(target);
 
+            Debug.Log("Chasing");
 
             yield return null;
         }
@@ -59,16 +60,20 @@ public class Enemy : MonoBehaviour
         {
             EventsManager.OnEnemyDied();
             animator.SetBool("isAlive", false);
+            isChasing = false;
             //enemyCollider.enabled = false;
-            StopAllCoroutines();
+            StopCoroutine(Chase());
 
             yield return new WaitForSeconds(5f);
 
             Destroy(gameObject);
+            
         }
-
-        isChasing = true;
-        StartCoroutine(Chase());
+        else
+        {
+            isChasing = true;
+            StartCoroutine(Chase());
+        }
 
     }
 
