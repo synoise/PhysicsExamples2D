@@ -5,17 +5,24 @@ using UnityEngine;
 public class AnimationEventTriggerer : MonoBehaviour
 {
     PlayerMovement playerMovement;
+    Enemy enemy;
     Shooting shooting;
 
     private void Awake()
     {
         playerMovement = FindObjectOfType<PlayerMovement>();
         shooting = FindObjectOfType<Shooting>();
+        enemy = FindObjectOfType<Enemy>();
     }
 
-    public void SetMovement(bool status)
+    public void EnableEnemyMovement()
     {
-        playerMovement.SetMove(status);
+        enemy.SetChaseState(true);
+    }
+
+    public void DisableEnemyMovement()
+    {
+        enemy.SetChaseState(false);
     }
 
     public void BulletOnShoot()

@@ -52,9 +52,6 @@ public class Enemy : MonoBehaviour
     {
         health--;
         animator.SetTrigger("Hit");
-        isChasing = false;
-
-        yield return new WaitForSeconds(0.2f);
 
         if (health <= 0 && animator.GetBool("isAlive"))
         {
@@ -69,12 +66,6 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
             
         }
-        else
-        {
-            isChasing = true;
-            StartCoroutine(Chase());
-        }
-
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -85,5 +76,13 @@ public class Enemy : MonoBehaviour
             StartCoroutine(OnHit());
             //score.text = (int.Parse(score.text) + 1).ToString();
         }
+    }
+
+    public void SetChaseState(bool state)
+    {
+        if (state)
+            StartCoroutine(Chase());
+
+        isChasing = state;
     }
 }
