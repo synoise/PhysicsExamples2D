@@ -17,7 +17,7 @@ public class HighscoreTable : MonoBehaviour
 
         entryTemplate.gameObject.SetActive(false);
 
-        // AddHighscoreEntry(8989898, "kamu");
+        // AddHighscoreEntry(777, "friz");  
 
         // List<HighscoreEntry> highscoreEntryList = new List<HighscoreEntry>(){
         //     new HighscoreEntry{ score = 5184, name = "AAA"},

@@ -38,4 +38,10 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadSceneAsync("MainMenu");
         Time.timeScale = 1f;
     }
+
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
