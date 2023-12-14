@@ -35,8 +35,6 @@ public class Enemy : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
             RotateToTarget(target);
 
-            Debug.Log("Chasing");
-
             yield return null;
         }
     }
