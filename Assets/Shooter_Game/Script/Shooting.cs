@@ -11,24 +11,40 @@ public class Shooting : MonoBehaviour
 
     [SerializeField] Animator playerAnimator;
 
+    PlayerMovement playerMovement;
+
+    private void Awake()
+    {
+        playerMovement = FindObjectOfType<PlayerMovement>();
+    }
+
     private void Update()
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Shoot();
+            StartCoroutine(Shoot());
         }
     }
 
-    private void Shoot()
+    private IEnumerator Shoot()
     {
+        playerMovement.SetMove(false);
+
         Look();
 
+        playerAnimator.SetTrigger("Shoot");     // Bullet instantiated using animation events
+
+        yield return new WaitForSeconds(0.5f);
+
+        playerMovement.SetMove(true);
+    }
+
+    public void InstantiateBullet()
+    {
         GameObject _bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody _bulletRb = _bullet.GetComponent<Rigidbody>();
 
         _bulletRb.AddForce(firePoint.forward * bulletForce, ForceMode.Impulse);
-
-        playerAnimator.SetTrigger("Shoot");
     }
 
     private void Look()
