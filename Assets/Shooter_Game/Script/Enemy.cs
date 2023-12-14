@@ -29,6 +29,7 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator Chase()
     {
+        Debug.Log("Start Chase");
         while (isChasing)
         {
 
@@ -78,9 +79,8 @@ public class Enemy : MonoBehaviour
 
     public void SetChaseState(bool state)
     {
-        if (state)
-            StartCoroutine(Chase());
-
         isChasing = state;
+        if (state == true)
+            StartCoroutine(Chase());
     }
 }
