@@ -21,6 +21,18 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    public void ClickPause()
+    {
+        if (Time.timeScale == 0f)
+        {
+            ResumeGame();
+        }
+        else
+        {
+            PauseGame();
+        }
+    }
+
     public void PauseGame()
     {
         pauseMenu.SetActive(true);
