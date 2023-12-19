@@ -146,3 +146,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7485269287beacb42a1a0b6a0bceaa47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sparkVFXGameObject: {fileID: 3489526165082134181, guid: e74c815a38e6b804dabb9fbd23299c4c,
+    type: 3}
