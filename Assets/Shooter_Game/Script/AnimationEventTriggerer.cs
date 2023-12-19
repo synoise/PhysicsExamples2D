@@ -5,7 +5,7 @@ using UnityEngine;
 public class AnimationEventTriggerer : MonoBehaviour
 {
     PlayerMovement playerMovement;
-    Enemy enemy;
+    [SerializeField] Enemy enemy;
     Shooting shooting;
 
     private void Awake()
@@ -28,5 +28,10 @@ public class AnimationEventTriggerer : MonoBehaviour
     public void BulletOnShoot()
     {
         shooting.InstantiateBullet();
+    }
+
+    public void DestroyEnemy()
+    {
+        enemy.DestroyEnemy();
     }
 }

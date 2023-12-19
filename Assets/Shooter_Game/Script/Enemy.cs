@@ -62,7 +62,7 @@ public class Enemy : MonoBehaviour
 
             yield return new WaitForSeconds(5f);
 
-            Destroy(gameObject);
+            //Destroy(gameObject);
             
         }
     }
@@ -82,5 +82,10 @@ public class Enemy : MonoBehaviour
         isChasing = state;
         if (state == true)
             StartCoroutine(Chase());
+    }
+
+    public void DestroyEnemy()
+    {
+        Destroy(this.gameObject);
     }
 }
