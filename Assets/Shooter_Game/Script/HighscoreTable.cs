@@ -1,9 +1,12 @@
+using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using Newtonsoft.Json;
 
 public class HighscoreTable : MonoBehaviour
 {
@@ -12,9 +15,13 @@ public class HighscoreTable : MonoBehaviour
     private List<Transform> highscoreEntryTranformList;
     private string currentPlayerName;
 
+    public static string DATA_PATH;
+
     public static HighscoreTable Instance { get; private set; }
     private void Awake()
     {
+        DATA_PATH = Application.persistentDataPath + "/save.json";
+
         if (Instance != null && Instance != this)
         {
             Destroy(this);
@@ -26,8 +33,9 @@ public class HighscoreTable : MonoBehaviour
 
         entryTemplate.gameObject.SetActive(false);
 
-        string jsonString = PlayerPrefs.GetString("highscoreTable");
-        Highscore highscore = JsonUtility.FromJson<Highscore>(jsonString);
+        string jsonString = FetchFileData();
+        //highscore = JsonUtility.FromJson<Highscore>(jsonString);
+        Highscore highscore = JsonConvert.DeserializeObject<Highscore>(jsonString);
 
         highscoreEntryTranformList = new List<Transform>();  // Initialize the list here
 
@@ -55,6 +63,29 @@ public class HighscoreTable : MonoBehaviour
 
     }
 
+    private string FetchFileData()
+    {
+        while (true)
+        {
+            try
+            {
+                if (!File.Exists(DATA_PATH))
+                {
+                    File.WriteAllText(DATA_PATH, "");
+                    return "";
+                }
+                else
+                {
+                    return File.ReadAllText(DATA_PATH);
+                }
+            }
+            catch (IOException)
+            {
+
+            }
+        }
+    }
+
     public void SetPlayerName(string playerName)
     {
         currentPlayerName = playerName;
@@ -64,9 +95,9 @@ public class HighscoreTable : MonoBehaviour
     {
         float templateHeight = 60f;
         Transform entryTransform = Instantiate(entryTemplate, container);
-        RectTransform entryRectTranform = entryTransform.GetComponent<RectTransform>();
+        /*RectTransform entryRectTranform = entryTransform.GetComponent<RectTransform>();
         entryRectTranform.anchoredPosition = new Vector2(0, -templateHeight * transformList.Count);
-        entryTransform.gameObject.SetActive(true);
+        entryTransform.gameObject.SetActive(true);*/
 
         int rank = transformList.Count + 1;
         string rankString;
@@ -91,10 +122,21 @@ public class HighscoreTable : MonoBehaviour
 
     public void AddHighscoreEntry(int score, string name)
     {
-        HighscoreEntry highscoreEntry = new HighscoreEntry { score = score, name = currentPlayerName };
+        HighscoreEntry highscoreEntry = new HighscoreEntry { score = score, name = name };
+        Highscore highscore = new();
 
-        string jsonString = PlayerPrefs.GetString("highscoreTable");
-        Highscore highscore = JsonUtility.FromJson<Highscore>(jsonString);
+        string jsonString = FetchFileData();
+
+        if (!string.IsNullOrEmpty(jsonString))
+        {
+            highscore = JsonConvert.DeserializeObject<Highscore>(jsonString);
+        }
+        else
+        {
+            Debug.Log("json empty");
+            // If the JSON string is empty or invalid, create a new Highscore object
+            highscore = new Highscore();
+        }
 
         highscore.highscoreEntryList.Add(highscoreEntry);
 
@@ -105,20 +147,19 @@ public class HighscoreTable : MonoBehaviour
         highscore.highscoreEntryList = highscore.highscoreEntryList.Take(10).ToList();
 
         // Save the updated highscore table
-        string json = JsonUtility.ToJson(highscore);
-        PlayerPrefs.SetString("highscoreTable", json);
-        PlayerPrefs.Save();
+        string json = JsonConvert.SerializeObject(highscore);
+        File.WriteAllText(Application.persistentDataPath + "/save.json", json);
     }
+}
 
-    private class Highscore
-    {
-        public List<HighscoreEntry> highscoreEntryList;
-    }
+public class Highscore
+{
+    public List<HighscoreEntry> highscoreEntryList = new();
+}
 
-    [System.Serializable]
-    private class HighscoreEntry
-    {
-        public int score;
-        public string name;
-    }
+[Serializable]
+public class HighscoreEntry
+{
+    public int score;
+    public string name;
 }
