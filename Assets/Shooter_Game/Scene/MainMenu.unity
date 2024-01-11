@@ -502,8 +502,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0009765625}
-  m_SizeDelta: {x: 0, y: 0.002}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &152264276
 MonoBehaviour:
@@ -534,10 +534,10 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 5
+    m_Top: 0
     m_Bottom: 260
   m_ChildAlignment: 1
-  m_Spacing: 0.5
+  m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -1472,9 +1472,9 @@ RectTransform:
   - {fileID: 206260789}
   m_Father: {fileID: 152264275}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 193.78, y: -39.87305}
   m_SizeDelta: {x: 387.56, y: 24.0429}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &530645399
@@ -1592,8 +1592,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -8.000977, y: -6.999939}
-  m_SizeDelta: {x: -412.44, y: -96.167}
+  m_AnchoredPosition: {x: -8.000977, y: -10.2909}
+  m_SizeDelta: {x: -412.44, y: -89.585}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &545470640
 MonoBehaviour:
@@ -2362,7 +2362,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 49521891}
+      - m_Target: {fileID: 1969279972}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -3407,9 +3407,9 @@ RectTransform:
   - {fileID: 1853340332}
   m_Father: {fileID: 152264275}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 193.78, y: 0}
   m_SizeDelta: {x: 387.56, y: 27.8516}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &1620310785
@@ -4095,7 +4095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1969279973
 MonoBehaviour:
   m_ObjectHideFlags: 0
