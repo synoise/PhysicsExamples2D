@@ -31,8 +31,6 @@ public class HighscoreTable : MonoBehaviour
             Instance = this;
         }
 
-        entryTemplate.gameObject.SetActive(false);
-
         string jsonString = FetchFileData();
         //highscore = JsonUtility.FromJson<Highscore>(jsonString);
         Highscore highscore = JsonConvert.DeserializeObject<Highscore>(jsonString);
@@ -56,6 +54,8 @@ public class HighscoreTable : MonoBehaviour
         {
             CreateHighscoreEntryTransform(highscoreEntry, entryContainer, highscoreEntryTranformList);
         }
+
+        entryTemplate.gameObject.SetActive(false);
     }
 
     public void StartGame()
@@ -110,12 +110,12 @@ public class HighscoreTable : MonoBehaviour
             case 3: rankString = "3RD"; break;
         }
 
-        entryTransform.Find("RankT").GetComponent<TMP_Text>().text = rankString;
+        entryTransform.Find("RankT").GetComponent<Text>().text = rankString;
 
         int score = highscoreEntry.score;
 
-        entryTransform.Find("ScoreT").GetComponent<TMP_Text>().text = score.ToString();
-        entryTransform.Find("NameT").GetComponent<TMP_Text>().text = highscoreEntry.name;
+        entryTransform.Find("ScoreT").GetComponent<Text>().text = score.ToString();
+        entryTransform.Find("NameT").GetComponent<Text>().text = highscoreEntry.name;
 
         transformList.Add(entryTransform);
     }
