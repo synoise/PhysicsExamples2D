@@ -115,7 +115,7 @@ public class HighscoreTable : MonoBehaviour
         int score = highscoreEntry.score;
 
         entryTransform.Find("ScoreT").GetComponent<Text>().text = score.ToString();
-        entryTransform.Find("NameT").GetComponent<Text>().text = highscoreEntry.name;
+        entryTransform.Find("NameT").GetComponent<Text>().text = highscoreEntry.name.ToUpper();
 
         transformList.Add(entryTransform);
     }

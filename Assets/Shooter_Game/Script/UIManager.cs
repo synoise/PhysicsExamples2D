@@ -43,7 +43,7 @@ public class UIManager : MonoBehaviour
         if (!SaveScoreData())
             return;
 
-        Time.timeScale = 0f;
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -53,7 +53,7 @@ public class UIManager : MonoBehaviour
             return;
 
 
-        Time.timeScale = 0f;
+        Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
 
