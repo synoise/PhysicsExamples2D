@@ -46,7 +46,7 @@ public class ScoreManager : MonoBehaviour
         scoreText.text = score.ToString("000");
     }
 
-    private void AddScore()
+    public void AddScore()
     {
         score++;
         UpdateUI();

@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] float moveSpeed;
-    
+
     private bool isChasing;
     private int health = 3;
 
@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
     {
         enemyCollider = GetComponent<CapsuleCollider>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
-        
+
         isChasing = true;
         animator.SetBool("isAlive", true);
         StartCoroutine(Chase());
@@ -63,8 +63,13 @@ public class Enemy : MonoBehaviour
             yield return new WaitForSeconds(5f);
 
             //Destroy(gameObject);
-            
+
         }
+    }
+
+    public void EnemyHit()
+    {
+        StartCoroutine(OnHit());
     }
 
     private void OnCollisionEnter(Collision collision)
