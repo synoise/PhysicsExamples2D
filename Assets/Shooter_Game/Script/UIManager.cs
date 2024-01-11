@@ -33,6 +33,7 @@ public class UIManager : MonoBehaviour
 
     public void OpenEndPanel()
     {
+        Time.timeScale = 0f;
         endPanel.SetActive(true);
         scoreText.text = ScoreManager.Instance.GetScore().ToString("000");
     }
@@ -42,6 +43,7 @@ public class UIManager : MonoBehaviour
         if (!SaveScoreData())
             return;
 
+        Time.timeScale = 0f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -50,6 +52,8 @@ public class UIManager : MonoBehaviour
         if (!SaveScoreData())
             return;
 
+
+        Time.timeScale = 0f;
         SceneManager.LoadScene(0);
     }
 
